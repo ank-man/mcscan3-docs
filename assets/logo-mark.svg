@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" role="img" aria-label="MCscan3">
+  <title>MCscan3</title>
+  <!-- Two chromosomes linked by syntenic ribbons (the mark of docs/assets/logo.svg). -->
+  <rect x="6" y="8" width="68" height="12" rx="6" fill="#56B4E9"/>
+  <rect x="6" y="60" width="68" height="12" rx="6" fill="#E69F00"/>
+  <path d="M14 20 C 14 40, 30 40, 30 60 L 44 60 C 44 40, 28 40, 28 20 Z" fill="#009E73" opacity="0.85"/>
+  <path d="M48 20 C 48 40, 64 40, 64 60 L 70 60 C 70 40, 54 40, 54 20 Z" fill="#009E73" opacity="0.6"/>
+</svg>

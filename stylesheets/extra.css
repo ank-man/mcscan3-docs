@@ -1,0 +1,130 @@
+/* MCscan3 documentation: an academic look. Serif text, sans-serif headings, booktabs tables,
+   numbered figure captions, and the colour-blind-safe palette of the figures (Okabe-Ito). */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+:root {
+  --mc3-ink: #1d232b;
+  --mc3-muted: #5b6573;
+  --mc3-rule: #1d232b;
+  --mc3-line: #d9dde3;
+  --mc3-soft: #f6f7f9;
+  --mc3-paper: #ffffff;
+  --mc3-accent: #0b4f7c;
+  --mc3-sans: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --md-primary-fg-color: #0b2e4f;
+  --md-primary-fg-color--light: #1c4a73;
+  --md-primary-fg-color--dark: #071f36;
+  --md-accent-fg-color: #0072b2;
+  --md-typeset-a-color: #0b5c94;
+  --md-default-fg-color: #1d232b;
+}
+[data-md-color-scheme="slate"] {
+  --mc3-ink: #e3e7ec;
+  --mc3-muted: #9aa5b3;
+  --mc3-rule: #c9d1db;
+  --mc3-line: #2b333d;
+  --mc3-soft: #161b22;
+  --mc3-paper: #11151b;
+  --mc3-accent: #6cc0ee;
+  --md-primary-fg-color: #0d2236;
+  --md-primary-fg-color--light: #163652;
+  --md-primary-fg-color--dark: #08141f;
+  --md-accent-fg-color: #56b4e9;
+  --md-typeset-a-color: #7cc4ef;
+  --md-default-bg-color: #11151b;
+}
+
+/* ---- type ------------------------------------------------------------------------------ */
+.md-typeset { font-size: .84rem; line-height: 1.68; color: var(--mc3-ink); }
+.md-typeset p, .md-typeset li { hyphens: auto; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3, .md-typeset h4,
+.md-nav, .md-tabs, .md-header, .md-search, .md-footer, .md-typeset table:not([class]),
+.md-typeset .md-button, .md-typeset figcaption, .md-typeset .admonition-title,
+.md-typeset summary, .mc3-meta, .mc3-kicker { font-family: var(--mc3-sans); }
+.md-typeset h1 { font-weight: 700; font-size: 1.9em; letter-spacing: -.01em; color: var(--mc3-ink); margin-bottom: .5em; }
+.md-typeset h2 {
+  font-weight: 700; font-size: 1.28em; margin-top: 2.2em; padding-bottom: .25em;
+  border-bottom: 1px solid var(--mc3-line); color: var(--mc3-ink);
+}
+.md-typeset h3 { font-weight: 600; font-size: 1.08em; margin-top: 1.8em; }
+.md-typeset h4 { font-weight: 600; font-size: .98em; color: var(--mc3-muted); text-transform: none; }
+.md-typeset code { font-size: .82em; }
+
+/* header and navigation: quiet, like a journal site */
+.md-header, .md-tabs { box-shadow: none; }
+.md-tabs { border-bottom: 1px solid rgba(255,255,255,.12); }
+.md-nav { font-size: .68rem; }
+.md-nav__title { font-weight: 700; }
+
+/* ---- tables: booktabs ------------------------------------------------------------------ */
+.md-typeset table:not([class]) {
+  font-size: .7rem; border: 0; border-radius: 0; box-shadow: none;
+  border-top: 1.5px solid var(--mc3-rule); border-bottom: 1.5px solid var(--mc3-rule);
+  display: table; width: auto; max-width: 100%;
+}
+.md-typeset__scrollwrap { margin: .8em 0 1.2em; }
+.md-typeset__table { display: block; overflow-x: auto; max-width: 100%; }
+.md-typeset table:not([class]) th {
+  background: transparent; font-weight: 600; color: var(--mc3-ink);
+  border-bottom: 1px solid var(--mc3-rule); padding: .5em .9em;
+}
+.md-typeset table:not([class]) td { border-top: 0; padding: .35em .9em; vertical-align: top; }
+.md-typeset table:not([class]) tr:hover { background: var(--mc3-soft); box-shadow: none; }
+
+/* ---- command pages --------------------------------------------------------------------- */
+.mc3-lead { font-size: 1.08em; font-style: italic; color: var(--mc3-muted); margin-top: -.4em; }
+.mc3-meta { font-size: .72rem; color: var(--mc3-muted); letter-spacing: .01em; margin: .2em 0 1em; }
+.mc3-meta b { color: var(--mc3-ink); font-weight: 600; }
+.mc3-file { margin: 1.6em 0 .2em; font-family: var(--mc3-sans); font-weight: 600; }
+.mc3-file code { font-size: .9em; background: transparent; padding: 0; }
+.mc3-cols table:not([class]) td:first-child { white-space: nowrap; }
+
+/* code blocks: light, with a rule, as in a methods section */
+.md-typeset pre > code { border-left: 3px solid var(--mc3-line); }
+.md-typeset .highlight { margin: .6em 0 1em; }
+
+/* ---- figures ----------------------------------------------------------------------------- */
+.md-typeset figure { margin: 1.4em 0 1.8em; max-width: 100%; }
+.md-typeset figure img, .mc3-shot img { border: 1px solid var(--mc3-line); border-radius: 2px; background: #fff; }
+.md-typeset figcaption {
+  font-size: .7rem; line-height: 1.5; color: var(--mc3-muted); max-width: 46rem; text-align: left;
+  margin: .6em 0 0; font-style: normal;
+}
+.md-typeset figcaption b { color: var(--mc3-ink); }
+.mc3-fig img { max-height: 760px; width: auto; }
+
+/* ---- landing page: title block like the first page of a paper -------------------------- */
+.mc3-title { margin: .5rem 0 2.4rem; padding: 0 0 1.6rem; border-bottom: 1.5px solid var(--mc3-rule); }
+.mc3-title h1 { font-size: 2.6rem; margin: .1em 0 .1em; }
+.mc3-kicker { text-transform: uppercase; letter-spacing: .12em; font-size: .64rem; color: var(--mc3-muted); margin: 0; }
+.mc3-subtitle { font-size: 1.2rem; font-style: italic; color: var(--mc3-muted); margin: 0 0 1.4rem; }
+.mc3-abstract {
+  max-width: 48rem; font-size: .86rem; padding: .9rem 1.1rem; margin-bottom: 1.4rem;
+  background: var(--mc3-soft); border-left: 3px solid var(--mc3-accent);
+}
+.mc3-abstract p { margin: 0; }
+.mc3-title .md-button { font-size: .72rem; padding: .45em 1.1em; border-radius: 2px; margin: 0 .4em .4em 0; }
+.mc3-title pre { max-width: 48rem; }
+.mc3-cite { padding: .2rem 1.1rem; background: var(--mc3-soft); border-left: 3px solid var(--mc3-accent); }
+.mc3-cite ol { font-size: .8rem; }
+
+.md-typeset .grid.cards > ul > li, .md-typeset .grid > .card {
+  border-radius: 2px; border-color: var(--mc3-line); background: var(--mc3-paper); box-shadow: none;
+}
+.md-typeset .grid.cards > ul > li:hover { border-color: var(--md-accent-fg-color); box-shadow: none; }
+.md-typeset .grid.cards strong { font-family: var(--mc3-sans); }
+
+/* ---- gallery and embedded pages --------------------------------------------------------- */
+.mc3-gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1rem; }
+.mc3-gallery figure { margin: 0; }
+.mc3-gallery figure a { display: block; }
+.mc3-frame { width: 100%; height: 860px; border: 1px solid var(--mc3-line); border-radius: 2px; background: #f6f7f9; }
+@media (max-width: 700px) {
+  .mc3-frame { height: 640px; }
+  .mc3-title h1 { font-size: 2rem; }
+  .md-typeset { font-size: .8rem; }
+}
+
+.md-typeset h1 code { background: transparent; padding: 0; font-size: .92em; color: var(--mc3-ink); }
+.md-typeset table:not([class]) td:first-child code { white-space: nowrap; }
+.md-typeset, .md-typeset p, .md-typeset li { font-family: var(--md-text-font-family), "Source Serif 4", Georgia, serif; }
